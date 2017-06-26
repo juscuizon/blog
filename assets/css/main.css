@@ -2682,12 +2682,13 @@ html {
     .header-bar ul a {
       text-decoration: none;
       color: white;
-      font-family: 'Open Sans'; }
+      font-family: 'Open Sans';
+      font-size: 15px; }
   .header-bar .navigation a:hover {
     color: #e03821;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; }
   .header-bar .social-icons a {
     position: relative;
     display: -webkit-box;
@@ -2703,4 +2704,7 @@ html {
     margin: -10px;
     height: 58px; }
   .header-bar .social-icons a:hover {
-    background: #111111; }
+    background: #111111;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; }
