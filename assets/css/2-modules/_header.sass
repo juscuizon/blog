@@ -46,6 +46,14 @@
 //================Mobile Navigation Start====================
 .mobile-header-bar
 	display: none
+	justify-content: center
+	align-items: center
+	//child absolute
+	margin: 0 -9999rem
+	height: 50px
+	//add back section padding value
+	padding: .25rem 9999rem
+	background-color: #262626
 
 #mobile-navigation-button
 	display: none
@@ -54,6 +62,11 @@
 		repeat: no-repeat
 	transition: all 0.2s ease-in-out
 	z-index: 2
+	flex-direction: row
+	justify-content: center
+	width: 30px
+	height: 30px
+
 
 .mobile-navigation
 	display: none
@@ -111,25 +124,12 @@
 
 	.mobile-header-bar
 		display: flex
-		justify-content: center
-		align-items: center
-		//child absolute
-		margin: 0 -9999rem
-		height: 50px
-		//add back section padding value
-		padding: .25rem 9999rem
-		background-color: #262626
-
-
+		
 		#mobile-navigation-button
 			display: flex
-			flex-direction: row
-			justify-content: center
-			width: 30px
-			height: 30px
+			
 
 	.mobile-navigation
-		
 		ul,li,a
 			display: flex
 			justify-content: center
@@ -137,7 +137,51 @@
 //Small Monitors and Tablets
 @media (min-width: 501px) and (max-width: 800px)
 	.header-bar
+		display: flex
+		flex-direction: column
+		justify-content: center
+		background-color: #222222
+		height: 175px
+
+		.navigation
+			display: none
+
+		.social-icons
+
+	.mobile-header-bar
+		display: flex
+		
+		#mobile-navigation-button
+			display: flex
+			
+
+	.mobile-navigation
+		ul,li,a
+			display: flex
+			justify-content: center
 
 //Mobile Devices
 @media (min-width: 50px) and (max-width: 500px)
 	.header-bar
+		display: flex
+		flex-direction: column
+		justify-content: center
+		background-color: #222222
+		height: 175px
+
+		.navigation
+			display: none
+
+		.social-icons
+
+	.mobile-header-bar
+		display: flex
+		
+		#mobile-navigation-button
+			display: flex
+			
+
+	.mobile-navigation
+		ul,li,a
+			display: flex
+			justify-content: center
