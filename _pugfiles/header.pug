@@ -1,12 +1,21 @@
+mixin navigation-links
+	ul
+		li: a(href="#") HOME
+		li: a(href="#") NEWS
+		li: a(href="#") WEB GRAPHICS
+		li: a(href="#") FEATURES
+		li: a(href="#") PAGES
+		li: a(href="#") ABOUT ME
+
+.mobile-header-bar
+	span#mobile-navigation-button.mobile-navigation-button
+
+.mobile-navigation
+	+navigation-links
+
 .header-bar
 	.navigation
-		ul
-			li: a(href="#") HOME
-			li: a(href="#") NEWS
-			li: a(href="#") WEB GRAPHICS
-			li: a(href="#") FEATURES
-			li: a(href="#") PAGES
-			li: a(href="#") ABOUT ME
+		+navigation-links
 
 	.social-icons
 		ul
@@ -14,4 +23,4 @@
 			li: a(href="#"): i.fa.fa-twitter.fa
 			li: a(href="#"): i.fa.fa-instagram.fa
 			li: a(href="#"): i.fa.fa-youtube-play.fa
-			
+
