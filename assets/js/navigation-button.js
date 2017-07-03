@@ -27,7 +27,12 @@ function toggleMenu() {
     } else {
         removeClass(ele, "open");
     }
-
+    var ele2 = document.getElementsByClassName('header-bar')[0];
+    if (!hasClass(ele2, "push")) {
+        addClass(ele2, "push");
+    } else {
+        removeClass(ele2, "push");
+    }
 
 }
 
