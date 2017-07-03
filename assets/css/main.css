@@ -2744,11 +2744,11 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 -9999rem;
-  height: 50px;
-  width: 100%;
   padding: .25rem 9999rem;
   background-color: #262626;
   position: absolute;
+  height: 50px;
+  width: 100%;
   z-index: 2; }
 
 #mobile-navigation-button {
