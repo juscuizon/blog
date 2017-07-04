@@ -3084,6 +3084,12 @@ html {
   font-family: 'Open Sans';
   font-size: 11px; }
 
+@media (min-width: 961px) and (max-width: 1200px) {
+  .footer-bar {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
+
 @media (min-width: 801px) and (max-width: 960px) {
   .footer-bar {
     -webkit-justify-content: space-around;
@@ -3111,7 +3117,7 @@ html {
         -ms-flex-align: center;
             align-items: center;
     height: 550px; }
-    .footer-bar .contact-information {
+    .footer-bar .contact-information, .footer-bar .recent-post {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
