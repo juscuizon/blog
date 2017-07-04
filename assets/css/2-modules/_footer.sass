@@ -1,10 +1,9 @@
 .footer-bar
 	display: flex
-	justify-content: space-around
-	align-items: center
+	justify-content: space-between
 	//child absolute
 	margin: 0 -9999rem
-	height: 200px
+	height: 180px
 	//add back section padding value
 	padding: .25rem 9999rem
 	background: #222222
@@ -21,7 +20,7 @@
 		
 		li
 			list-style-type: none
-			padding-bottom: 10px
+			padding-top: 10px
 			color: grey
 			font-family: 'Open Sans'
 			font-size: 12px
@@ -31,6 +30,28 @@
 				color: grey
 				font-family: 'Open Sans'
 				font-size: 12px
+	.social-icons
+		ul
+			display: flex
+			flex-direction: row
+
+			li
+				margin-right: 3px
+
+			a
+				color: white
+				background-color: #333333
+				padding: 10px
+
+			a:hover
+				color: black
+				background-color: white
+				transition: 0.5s
+
+	.categories
+		li
+			width: 150px
+			border-bottom: solid grey 0.5px
 
 .copyright-bar
 	display: flex
@@ -46,4 +67,44 @@
 	span
 	color: white
 	font-family: 'Open Sans'
-	font-size: 15px
+	font-size: 11px
+
+//================Responsive Design====================
+//Medium PC Monitors
+@media (min-width: 961px) and (max-width: 1200px)
+	.footer-bar
+
+//Small Monitors and Large Tablets
+@media (min-width: 801px) and (max-width: 960px)
+	.footer-bar
+		justify-content: space-around
+
+//Small Monitors and Tablets
+@media (min-width: 501px) and (max-width: 800px)
+	.footer-bar
+		justify-content: space-around
+
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.footer-bar
+		flex-direction: column
+		justify-content: space-around
+		align-items: center
+		height: 550px
+
+		.contact-information
+			display: flex
+			flex-direction: column
+			justify-content: center
+			text-align: center
+			align-items: center
+
+		.categories
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			text-align: center
+			li
+				width: 100vw
+				border-bottom: solid grey 0.5px
