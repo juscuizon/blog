@@ -2,3 +2,44 @@
 title: Justin Cuizon
 layout: default
 ---
+
+
+	<ul class="posts-list">{% for post in site.posts %}
+		<div class="posts-loop-container">
+			<div class="post-category">
+				<h6>{{ post.categories }}</h6>
+			</div>
+			<div class="post-title">
+				<h3> 
+					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <br /></a>
+				</h3>
+			</div>
+			<div class= "post-author">
+				<span>{{ post.author }}</span>
+			
+			
+				<span> {{ post.date | date: '%B %d, %Y' }} </span>
+
+			</div>
+			{% assign foundImage = 0 %}
+			{% assign images = post.content | split:"<img " %}
+			{% for image in images %}
+			{% if image contains 'src' %}
+			{% if foundImage == 0 %}
+			{% assign html = image | split:"/>" | first %}
+			<img class="featured-image" {{ html }} />
+			{% assign foundImage = 1 %}
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			<div class="post-excerpt">
+				<span class="post-excerpt">{{ post.excerpt }}</span>
+			</div>
+			<div class="read-more-button">
+				<a href="{{ site.baseurl }}{{ post.url }}">
+					<p>-READ MORE-</p>
+				</a>
+			</div>
+		</div>
+		{% endfor %}
+	</ul>

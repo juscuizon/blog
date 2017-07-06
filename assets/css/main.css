@@ -3158,3 +3158,40 @@ html {
       .footer-bar .categories li {
         width: 100vw;
         border-bottom: solid grey 0.5px; } }
+
+.main-content {
+  width: 810px;
+  min-height: 1600px; }
+  .main-content .posts-loop-container {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 810px;
+    min-height: 650px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .main-content .posts-loop-container span {
+      margin-right: 10px; }
+    .main-content .posts-loop-container h3 {
+      margin-bottom: 0px;
+      margin-top: 0px; }
+    .main-content .posts-loop-container a {
+      text-decoration: none; }
+    .main-content .posts-loop-container .featured-image {
+      width: 800px;
+      height: 600px; }
+    .main-content .posts-loop-container .post-category h6, .main-content .posts-loop-container .post-category h3, .main-content .posts-loop-container .post-category span, .main-content .posts-loop-container .post-category p, .main-content .posts-loop-container .post-title h6, .main-content .posts-loop-container .post-title h3, .main-content .posts-loop-container .post-title span, .main-content .posts-loop-container .post-title p, .main-content .posts-loop-container .post-author h6, .main-content .posts-loop-container .post-author h3, .main-content .posts-loop-container .post-author span, .main-content .posts-loop-container .post-author p, .main-content .posts-loop-container .read-more-button h6, .main-content .posts-loop-container .read-more-button h3, .main-content .posts-loop-container .read-more-button span, .main-content .posts-loop-container .read-more-button p {
+      font-family: 'Open Sans'; }
