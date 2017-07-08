@@ -1,7 +1,7 @@
 .main-content
-	//border: solid yellow
 	width: 845px
 	min-height: 1600px
+	z-index: 1
 
 	.posts-loop-container
 		background-color: white
@@ -108,3 +108,163 @@
 						a:hover
 							color: #e03821
 							transition: 0.5s
+
+//================Responsive Design====================
+//Medium PC Monitors
+@media (min-width: 961px) and (max-width: 1200px)
+	.main-content
+		margin-left: 30px
+		width: 640px
+
+		.posts-loop-container
+			width: 600px
+
+			.featured-image
+				width: 580px
+				height: 435px
+				margin-bottom: 15px
+
+			.post-excerpt
+				padding-bottom: 50px
+				margin-bottom: 10px
+				min-width: 599px
+				border-bottom: dashed grey 0.1px
+				text-align: center
+				font-family: 'Cabin'
+				font-size: 13px
+
+			.bottom-cta
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				min-width: 610px
+				margin-top: 20px
+
+//Small Monitors and Large Tablets
+@media (min-width: 801px) and (max-width: 960px)
+	.main-content
+		margin-top: -180px
+		margin-left: 30px
+		width: 520px
+
+		.posts-loop-container
+			margin-top: 50px
+			margin-bottom: 0px
+			width: 480px
+
+			.featured-image
+				width: 460px
+				height: 345px
+				margin-bottom: 15px
+
+			.post-excerpt
+				padding-bottom: 50px
+				margin-bottom: 10px
+				min-width: 479px
+				border-bottom: dashed grey 0.1px
+				text-align: center
+				font-family: 'Cabin'
+				font-size: 13px
+
+			.bottom-cta
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				min-width: 490px
+				margin-top: 20px
+
+
+
+//Small Monitors and Tablets
+@media (min-width: 501px) and (max-width: 800px)
+	.main-content
+		transform: translateY(-180px)
+		margin: 0 auto
+		width: 400px
+
+		.posts-loop-container
+			margin-top: 50px
+			margin-bottom: 0px
+			width: 360px
+
+			.post-categories
+				a
+					font-size: 14px
+
+			.post-title
+				text-align: center
+				a
+					font-size: 30px
+
+			.featured-image
+				width: 340px
+				height: 255px
+				margin-bottom: 15px
+
+			.post-excerpt
+				padding-bottom: 50px
+				margin-bottom: 10px
+				min-width: 359px
+				border-bottom: dashed grey 0.1px
+				text-align: center
+				font-family: 'Cabin'
+				font-size: 13px
+
+			.bottom-cta
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-items: center
+				min-width: 370px
+				margin-top: 20px
+
+				.continue-button
+					margin-bottom: 30px
+
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.main-content
+		transform: translateY(-180px)
+		margin: 0 auto
+		width: 310px
+
+		.posts-loop-container
+			margin-top: 50px
+			margin-bottom: 0px
+			width: 270px
+
+			.post-categories
+				a
+					font-size: 14px
+
+			.post-title
+				text-align: center
+				a
+					font-size: 30px
+
+			.featured-image
+				width: 300px
+				height: 225px
+				margin-bottom: 15px
+
+			.post-excerpt
+				padding-bottom: 50px
+				margin-bottom: 10px
+				min-width: 299px
+				border-bottom: dashed grey 0.1px
+				text-align: center
+				font-family: 'Cabin'
+				font-size: 13px
+
+			.bottom-cta
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-items: center
+				min-width: 370px
+				margin-top: 20px
+
+				.continue-button
+					margin-bottom: 30px
