@@ -1,6 +1,6 @@
 .main-content
-	//border: solid blue
-	width: 810px
+	//border: solid yellow
+	width: 845px
 	min-height: 1600px
 
 	.posts-loop-container
@@ -11,26 +11,100 @@
 		min-height: 650px
 		display: flex
 		flex-direction: column
+		justify-content: space-between
 		align-items: center
-		padding-left: 15px
-		padding-right: 15px
+		padding: 25px 20px
+		box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.11)
 		//border: solid green
 
-		span
-			margin-right: 10px
+		.post-categories
+			text-transform: uppercase
 
-		h3
-			margin-bottom: 0px
-			margin-top: 0px
-			//border: green solid
+			a
+				text-decoration: none
+				color: #333333
+				font-family: 'Raleway'
+				font-size: 18px
 
-		a
-			text-decoration: none
+			a:hover
+				color: #e03821
+				transition: 0.4s
+
+		.post-title
+			text-transform: uppercase
+
+			a
+				text-decoration: none
+				color: #333333
+				font-family: 'Teko'
+				font-size: 50px
+
+			a:hover
+				color: #e03821
+				transition: 0.4s
+
+		.post-details
+			text-transform: uppercase
+			margin-bottom: 5px
+
+			span
+				font-family: 'Teko'
+				font-size: 14px
+				color: grey
+				margin-right: 2px
 
 		.featured-image
 			width: 800px
 			height: 600px
+			margin-bottom: 15px
 
-		.post-category, .post-title, .post-author, .read-more-button
-			h6, h3, span, p
-				font-family: 'Open Sans'
+		.post-excerpt
+			padding-bottom: 50px
+			margin-bottom: 10px
+			min-width: 800px
+			border-bottom: dashed grey 0.1px
+			text-align: center
+			font-family: 'Cabin'
+			font-size: 13px
+
+		.bottom-cta
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			min-width: 810px
+			margin-top: 20px
+
+			.continue-button
+				display: flex
+				justify-content: center
+				align-items: center
+				text-align: center
+
+				a:hover
+					background-color: #e03821
+					transition: 0.5s
+
+				a
+					text-decoration: none
+					font-family: 'Raleway'
+					background-color: #222222
+					padding: 15px 20px
+					color: white
+
+			.social-icons
+				ul
+					display: flex
+					flex-direction: row
+
+					li
+						margin-right: 0px
+						list-style-type: none
+
+						a
+							color: grey
+							padding: 10px
+
+						a:hover
+							color: #e03821
+							transition: 0.5s

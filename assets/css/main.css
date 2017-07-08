@@ -10,6 +10,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lekton|Molengo");
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two");
 @import url("https://fonts.googleapis.com/css?family=Cabin+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Raleway:900");
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3160,7 +3161,7 @@ html {
         border-bottom: solid grey 0.5px; } }
 
 .main-content {
-  width: 810px;
+  width: 845px;
   min-height: 1600px; }
   .main-content .posts-loop-container {
     background-color: white;
@@ -3177,21 +3178,124 @@ html {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 15px;
-    padding-right: 15px; }
-    .main-content .posts-loop-container span {
-      margin-right: 10px; }
-    .main-content .posts-loop-container h3 {
-      margin-bottom: 0px;
-      margin-top: 0px; }
-    .main-content .posts-loop-container a {
-      text-decoration: none; }
+    padding: 25px 20px;
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.11);
+            box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.11); }
+    .main-content .posts-loop-container .post-categories {
+      text-transform: uppercase; }
+      .main-content .posts-loop-container .post-categories a {
+        text-decoration: none;
+        color: #333333;
+        font-family: 'Raleway';
+        font-size: 18px; }
+      .main-content .posts-loop-container .post-categories a:hover {
+        color: #e03821;
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s; }
+    .main-content .posts-loop-container .post-title {
+      text-transform: uppercase; }
+      .main-content .posts-loop-container .post-title a {
+        text-decoration: none;
+        color: #333333;
+        font-family: 'Teko';
+        font-size: 50px; }
+      .main-content .posts-loop-container .post-title a:hover {
+        color: #e03821;
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s; }
+    .main-content .posts-loop-container .post-details {
+      text-transform: uppercase;
+      margin-bottom: 5px; }
+      .main-content .posts-loop-container .post-details span {
+        font-family: 'Teko';
+        font-size: 14px;
+        color: grey;
+        margin-right: 2px; }
     .main-content .posts-loop-container .featured-image {
       width: 800px;
-      height: 600px; }
-    .main-content .posts-loop-container .post-category h6, .main-content .posts-loop-container .post-category h3, .main-content .posts-loop-container .post-category span, .main-content .posts-loop-container .post-category p, .main-content .posts-loop-container .post-title h6, .main-content .posts-loop-container .post-title h3, .main-content .posts-loop-container .post-title span, .main-content .posts-loop-container .post-title p, .main-content .posts-loop-container .post-author h6, .main-content .posts-loop-container .post-author h3, .main-content .posts-loop-container .post-author span, .main-content .posts-loop-container .post-author p, .main-content .posts-loop-container .read-more-button h6, .main-content .posts-loop-container .read-more-button h3, .main-content .posts-loop-container .read-more-button span, .main-content .posts-loop-container .read-more-button p {
-      font-family: 'Open Sans'; }
+      height: 600px;
+      margin-bottom: 15px; }
+    .main-content .posts-loop-container .post-excerpt {
+      padding-bottom: 50px;
+      margin-bottom: 10px;
+      min-width: 800px;
+      border-bottom: dashed grey 0.1px;
+      text-align: center;
+      font-family: 'Cabin';
+      font-size: 13px; }
+    .main-content .posts-loop-container .bottom-cta {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      min-width: 810px;
+      margin-top: 20px; }
+      .main-content .posts-loop-container .bottom-cta .continue-button {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center; }
+        .main-content .posts-loop-container .bottom-cta .continue-button a:hover {
+          background-color: #e03821;
+          -webkit-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s; }
+        .main-content .posts-loop-container .bottom-cta .continue-button a {
+          text-decoration: none;
+          font-family: 'Raleway';
+          background-color: #222222;
+          padding: 15px 20px;
+          color: white; }
+      .main-content .posts-loop-container .bottom-cta .social-icons ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        .main-content .posts-loop-container .bottom-cta .social-icons ul li {
+          margin-right: 0px;
+          list-style-type: none; }
+          .main-content .posts-loop-container .bottom-cta .social-icons ul li a {
+            color: grey;
+            padding: 10px; }
+          .main-content .posts-loop-container .bottom-cta .social-icons ul li a:hover {
+            color: #e03821;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            transition: 0.5s; }
