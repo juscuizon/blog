@@ -17,6 +17,7 @@ html
 	min-height: 1400px
 	left: 0px
 	margin: 0px auto
+	//border: solid blue
 
 .footer-container
 	position: relative
@@ -24,6 +25,16 @@ html
 	min-height: 199px
 	left: 0px
 	margin: 0px auto
+
+.content-area-container
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	margin-bottom: 50px
+	min-height: 1400px
+	//border: solid red
+
+
 
 //Medium PC Monitors
 @media (min-width: 960px) and (max-width: 1200px)
@@ -39,6 +50,9 @@ html
 		max-width: 890px
 		margin: 0px auto
 
+	.content-area-container
+		margin-top: -180px
+
 //Small Monitors and Tablets
 @media (min-width: 501px) and (max-width: 800px)
 	.page-container
@@ -46,11 +60,19 @@ html
 		max-width: 720px
 		margin: 0px auto
 
+	.content-area-container
+		flex-direction: column
+		margin-top: -180px
+
 //Mobile Devices
 @media (min-width: 50px) and (max-width: 500px)
 	.page-container
 		position: relative
 		max-width: 500px
 		margin: 0px auto
+
+	.content-area-container
+		flex-direction: column
+		margin-top: -180px
 
 

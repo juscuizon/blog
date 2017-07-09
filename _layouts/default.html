@@ -18,8 +18,11 @@
     <body>
         <div class="page-container">
             {% include header.html %}
-            <div class="main-content">
-                {{content}}
+            <div class="content-area-container">
+                <div class="main-content">
+                    {{content}}
+                </div>
+                {% include side-bar.html %}
             </div>
         </div>
         <div class="footer-container">
