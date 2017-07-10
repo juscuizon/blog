@@ -7,8 +7,7 @@
 	width: 320px
 	max-height: 2800px
 
-	p
-
+	.title
 		font-family: 'Raleway'
 		font-size: 12px
 		text-transform: uppercase
@@ -19,38 +18,132 @@
 		width: 300px
 		border-bottom: solid #dedede 0.3px
 
-	.popular-post
-		background-color: white
-		width: 320px
-		height: 400px
-		margin-bottom: 20px
-
 	.network
 		background-color: white
 		width: 320px
-		height: 200px
+		min-height: 200px
 		margin-bottom: 20px
+
+		.network-text
+			font-family: 'Cabin'
+			font-size: 11px
+
+		.first-row
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+
+			ul
+				li
+					list-style-type: none
+					margin: 0 auto
+					padding: 20px 50px
+
+					a
+						text-decoration: none
+						color: #333333
+
+			a:hover
+				color: #e03821
 
 	.categories
 		background-color: white
 		width: 320px
-		height: 100px
+		min-height: 100px
 		margin-bottom: 20px
+
+		.first-row
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			padding-top: 15px
+
+			select, option
+				width: 280px
+				height: 25px
+				font-family: 'Cabin'
+				font-size: 13px
+				border: #dedede solid 0.5px
+
+			option
+				font-size: 12px
 
 	.subscribe-form
 		background-color: white
 		width: 320px
-		height: 100px
+		min-height: 100px
 		margin-bottom: 20px
+		padding-bottom: 10px
+
+		form
+			padding-top: 15px
+			margin-bottom: 10px
+
+			input
+				font-family: 'Cabin'
+				font-size: 12px
+				width: 290px
+				height: 20px
+				border: #dedede solid 0.5px
+
+		.sign-up-button
+			align-items: center
+			display: flex
+			justify-content: center
+			font-family: 'Raleway'
+			font-size: 12px
+			text-transform: uppercase
+			height: 25px
+			width: 80px
+			padding-top: 5px
+			padding-bottom: 5px
+			margin: 0 auto
+			background-color: #dedede
 
 	.instagram-plugin
-		background-color: white
 		width: 320px
-		height: 500px
+		min-height: 500px
 		margin-bottom: 20px
+
+		.insta-widget
+			margin: 10px 0px
 
 	.twitter-plugin
 		background-color: white
 		width: 320px
-		height: 500px
+		min-height: 500px
 		margin-bottom: 20px
+
+		.twitter-widget
+			margin: 10px 0px
+
+//================Responsive Design====================
+//Medium PC Monitors
+@media (min-width: 961px) and (max-width: 1200px)
+	.side-bar-container
+
+//Small Monitors and Large Tablets
+@media (min-width: 801px) and (max-width: 960px)
+	.side-bar-container
+
+//Small Monitors and Tablets
+@media (min-width: 501px) and (max-width: 800px)
+	.side-bar-container
+		padding-top: 30px
+		margin: 0 auto
+		width: 395px
+
+		.network, .categories, .subscribe-form, .instagram-plugin, .twitter-plugin
+			width: 395px
+
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.side-bar-container
+		padding-top: 30px
+		margin: 0 auto
+
+		.network, .categories, .subscribe-form, .instagram-plugin, .twitter-plugin
+			width: 320px
+	

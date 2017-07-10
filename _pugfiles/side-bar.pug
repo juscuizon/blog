@@ -1,18 +1,55 @@
 .side-bar-container
-	.popular-post
-		p Popular Post
-
 	.network
-		p Network
-		
+		.title
+			p Network
+
+		.first-row
+			.first-col
+				ul
+					li: a(href="#"): i.fa.fa-facebook.fa: .network-text Facebook
+					li: a(href="#"): i.fa.fa-twitter.fa: .network-text Twitter
+			.second-col
+				ul
+					li: a(href="#"): i.fa.fa-instagram.fa: .network-text Instagram
+					li: a(href="#"): i.fa.fa-youtube-play.fa: .network-text Youtube
 	.categories
-		p Categories
+		.title
+			p Categories
+
+		.first-row
+			select
+				option(value=0 selected=selected) Select Category
+				option(value=1) Technology
+				option(value=2) Finance
+				option(value=3) Game
+				option(value=4) Food
+				option(value=5) Travel
 
 	.subscribe-form
-		p Subscribe via email
+		.title
+			p Subscribe via email
+
+		form(method='POST' action='/subscribe')
+			.email
+				input(type='text', placeholder='Email Address' name='email')
+
+		.sign-up-button
+			p Sign me up!
 
 	.instagram-plugin
-		p Instagram
+		.title
+			p Instagram
+
+		.insta-widget
+			<!-- SnapWidget -->
+			<script src="https://snapwidget.com/js/snapwidget.js"></script>
+			<iframe src="https://snapwidget.com/embed/407127" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
 
 	.twitter-plugin
-		p Twitter
+		.title
+			p Twitter
+
+		.twitter-widget
+			<!-- SnapWidget -->
+			<script src="https://snapwidget.com/js/snapwidget.js"></script>
+			<iframe src="https://snapwidget.com/embed/407132" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
