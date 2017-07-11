@@ -16,7 +16,32 @@
 
 	.recent-post
 		span Recent Post
-		
+		|{% for post in site.posts limit:1 %}
+		.recent-post-container
+
+			|{% assign foundImage = 0 %}
+			|{% assign images = post.content | split:"<img " %}
+			|{% for image in images %}
+			|{% if image contains 'src' %}
+			|{% if foundImage == 0 %}
+			|{% assign html = image | split:"/>" | first %}
+			|<img class="featured-image" {{ html }} />
+			|{% assign foundImage = 1 %}
+			|{% endif %}
+			|{% endif %}
+			|{% endfor %}
+			
+			.post-title
+				h1 
+					a(href="{{ site.baseurl }}{{ post.url }}")
+						|{{ post.title }}
+
+			.post-details
+				p
+					|{{ post.date | date_to_long_string }}
+
+		|{% endfor %}
+
 	.categories
 		span Categories
 		ul

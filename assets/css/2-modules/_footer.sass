@@ -48,6 +48,32 @@
 				background-color: white
 				transition: 0.5s
 
+	.recent-post-container
+		display: flex
+		flex-direction: column
+		//border: solid green
+		min-height: 150px
+		min-width: 200px
+		margin-bottom: 5px
+		line-height: 1px
+
+		span
+			margin-bottom: 10px
+
+		.featured-image
+			width: 150px
+			height: 112.5px
+			margin-bottom: -15px
+
+		.post-title, .post-details
+			text-transform: uppercase
+
+			a, p
+				text-decoration: none
+				color: #fff
+				font-family: 'Cabin'
+				font-size: 12px
+
 	.categories
 		li
 			width: 150px
@@ -90,11 +116,18 @@
 @media (min-width: 50px) and (max-width: 500px)
 	.footer-bar
 		flex-direction: column
-		justify-content: space-around
+		justify-content: space-between
 		align-items: center
-		height: 550px
+		height: 700px
 
 		.contact-information, .recent-post
+			display: flex
+			flex-direction: column
+			justify-content: center
+			text-align: center
+			align-items: center
+
+		.recent-post-container
 			display: flex
 			flex-direction: column
 			justify-content: center
@@ -109,4 +142,5 @@
 			text-align: center
 			li
 				width: 100vw
+				padding-bottom: 20px
 				border-bottom: solid grey 0.5px
