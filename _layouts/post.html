@@ -3,7 +3,37 @@ title: Justin Cuizon
 layout: default
 ---
 
-<div class="post-title"><span>{{ page.title }}</span></div>
-<div class="post-date"><span>{{ page.date | date_to_long_string }}</span></div>
-<div class="post-author"><span>{{ page.author}}</div></span>
-{{ content }}
+<div class="posts-loop-container">
+
+	<!--
+	<div class="post-categories">
+	<a href="{{ site.baseurl }}/categories">{{ post.categories }}</a>
+	</div>
+	-->
+
+	<div class="post-title">
+		<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a></h3>
+	</div>
+
+	<div class= "post-details">
+		<span> {{ page.author }} </span>
+		<span> | </span>
+		<span> {{ page.date | date: '%B %d, %Y' }} </span>
+	</div>
+
+	<div class="post-content">
+		{{ content }}
+	</div>
+
+	<div class="bottom-cta">
+		<span class="social-icons">
+			<ul>
+				<li> <a href="#"> <i class = "fa fa-facebook"></i></a></li>
+				<li> <a href="#"> <i class = "fa fa-twitter"></i></a></li>
+				<li> <a href="#"> <i class = "fa fa-instagram"></i></a></li>
+			</ul>
+		</span>
+	</div>
+
+</div>
+
