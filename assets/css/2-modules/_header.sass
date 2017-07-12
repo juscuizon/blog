@@ -24,7 +24,18 @@
 			font-family: 'Open Sans'
 			font-size: 15px
 
+	.logo
+		display: flex
+		justify-content: center
+		align-items: center
+		background: 
+			image: url(../img/logo.svg)
+			repeat: no-repeat
+		width: 50px
+		height: 40px
+
 	.navigation
+		margin-left: -400px
 
 		a:hover
 			color: #e03821
@@ -109,6 +120,20 @@
 		display: flex
 		flex-direction: column
 		justify-content: flex-start	
+		height: 120px
+
+		.navigation
+			display: flex
+			justify-content: center
+			margin-left: 0px
+			padding-bottom: 30px
+			align-items: center
+			width: 100%
+
+		.logo
+			width: 50px
+			height: 50px
+			padding-bottom: 50px
 
 //Small Monitors and Large Tablets
 @media (min-width: 801px) and (max-width: 960px)
@@ -121,6 +146,10 @@
 		transform: translateY(-180px)
 		transition: all 0.3s ease-in-out
 		position: relative
+
+		.logo
+			width: 100px
+			height: 100px
 
 		.navigation
 			display: none
@@ -157,6 +186,10 @@
 		transition: all 0.3s ease-in-out
 		position: relative
 
+		.logo
+			width: 100px
+			height: 100px
+
 		.navigation
 			display: none
 
@@ -192,6 +225,10 @@
 		transform: translateY(-180px)
 		transition: all 0.3s ease-in-out
 		position: relative
+
+		.logo
+			width: 100px
+			height: 100px
 
 		.navigation
 			display: none

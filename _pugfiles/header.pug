@@ -1,11 +1,11 @@
 mixin navigation-links
 	ul
-		li: a(href="{{site.baseurl}}/..") HOME
+		li: a(href="{{ site.baseurl }}/..") HOME
 		li: a(href="#") CATEGORIES
 		li: a(href="#") WEB GRAPHICS
 		li: a(href="#") FEATURES
-		li: a(href="#") CONTACT
-		li: a(href="#") ABOUT
+		li: a(href="{{site.baseurl}}/contact") CONTACT
+		li: a(href="{{site.baseurl}}/about") ABOUT
 
 .mobile-header-bar
 	span#mobile-navigation-button.mobile-navigation-button
@@ -15,6 +15,9 @@ mixin navigation-links
 	+navigation-links
 
 .header-bar
+	.logo
+		
+		
 	.navigation
 		+navigation-links
 
