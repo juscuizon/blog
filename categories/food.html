@@ -5,7 +5,7 @@ layout: default
 
 <ul class="posts-list">
 	{% for post in site.categories.food %}
-		<div class="posts-loop-container">
+		<div class="posts-container">
 			
 			<div class="post-categories">
 				<a href="{{ site.baseurl }}/categories/food">{{ post.categories }}</a>
@@ -44,9 +44,9 @@ layout: default
 
 				<span class="social-icons">
 				<ul>
-					<li> <a href="#"> <i class = "fa fa-facebook"></i></a></li>
-					<li> <a href="#"> <i class = "fa fa-twitter"></i></a></li>
-					<li> <a href="#"> <i class = "fa fa-instagram"></i></a></li>
+					<li> <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{site.baseurl}}{{ post.url }}" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class = "fa fa-facebook fa share-button"></i></a></li>
+					<li> <a href="https://twitter.com/home?status={{ site.url }}{{site.baseurl}}{{ post.url }}" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"> <i class = "fa fa-twitter fa share-button"></i></a></li>
+					<li> <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{site.baseurl}}{{ post.url }}" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"> <i class = "fa fa-linkedin fa share-button"></i></a></li>
 				</ul>
 				</span>
 			</div>

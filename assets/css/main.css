@@ -2771,7 +2771,7 @@ html {
     width: 50px;
     height: 40px; }
   .header-bar .navigation {
-    margin-left: -400px; }
+    margin-left: -200px; }
     .header-bar .navigation a:hover {
       color: #e03821;
       -webkit-transition: 0.4s;
@@ -3344,6 +3344,11 @@ html {
     margin: 0 auto;
     width: 320px;
     border-bottom: solid #dedede 0.3px; }
+  .side-bar-container .about-me {
+    background-color: white;
+    min-width: 320px;
+    min-height: 450px;
+    margin-bottom: 20px; }
   .side-bar-container .network {
     background-color: white;
     width: 320px;
@@ -3464,21 +3469,21 @@ html {
     padding-top: 30px;
     margin: 0 auto;
     width: 395px; }
-    .side-bar-container .network, .side-bar-container .categories, .side-bar-container .subscribe-form, .side-bar-container .instagram-plugin, .side-bar-container .twitter-plugin {
+    .side-bar-container .about-me, .side-bar-container .network, .side-bar-container .categories, .side-bar-container .subscribe-form, .side-bar-container .instagram-plugin, .side-bar-container .twitter-plugin {
       width: 395px; } }
 
 @media (min-width: 50px) and (max-width: 500px) {
   .side-bar-container {
     padding-top: 30px;
     margin: 0 auto; }
-    .side-bar-container .network, .side-bar-container .categories, .side-bar-container .subscribe-form, .side-bar-container .instagram-plugin, .side-bar-container .twitter-plugin {
+    .side-bar-container .about-me, .side-bar-container .network, .side-bar-container .categories, .side-bar-container .subscribe-form, .side-bar-container .instagram-plugin, .side-bar-container .twitter-plugin {
       width: 320px; } }
 
 .main-content {
   width: 845px;
   min-height: 1600px;
   z-index: 1; }
-  .main-content .posts-loop-container {
+  .main-content .posts-container {
     background-color: white;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -3504,44 +3509,44 @@ html {
     padding: 25px 20px;
     -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.11);
             box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.11); }
-    .main-content .posts-loop-container .post-categories {
+    .main-content .posts-container .post-categories {
       text-transform: uppercase; }
-      .main-content .posts-loop-container .post-categories a {
+      .main-content .posts-container .post-categories a {
         text-decoration: none;
         color: #333333;
         font-family: 'Raleway';
         font-size: 18px; }
-      .main-content .posts-loop-container .post-categories a:hover {
+      .main-content .posts-container .post-categories a:hover {
         color: #e03821;
         -webkit-transition: 0.4s;
         -o-transition: 0.4s;
         transition: 0.4s; }
-    .main-content .posts-loop-container .post-title {
+    .main-content .posts-container .post-title {
       text-transform: uppercase; }
-      .main-content .posts-loop-container .post-title a {
+      .main-content .posts-container .post-title a {
         text-decoration: none;
         color: #333333;
         font-family: 'Teko';
         font-size: 50px; }
-      .main-content .posts-loop-container .post-title a:hover {
+      .main-content .posts-container .post-title a:hover {
         color: #e03821;
         -webkit-transition: 0.4s;
         -o-transition: 0.4s;
         transition: 0.4s; }
-    .main-content .posts-loop-container .post-details {
+    .main-content .posts-container .post-details {
       text-transform: uppercase;
       margin-bottom: 5px; }
-      .main-content .posts-loop-container .post-details span, .main-content .posts-loop-container .post-details a {
+      .main-content .posts-container .post-details span, .main-content .posts-container .post-details a {
         font-family: 'Righteous';
         font-size: 12px;
         color: #333;
         margin-right: 2px;
         text-decoration: none; }
-    .main-content .posts-loop-container .featured-image {
+    .main-content .posts-container .featured-image {
       width: 835px;
       height: 626.25px;
       margin-bottom: 15px; }
-    .main-content .posts-loop-container .post-excerpt {
+    .main-content .posts-container .post-excerpt {
       padding-bottom: 50px;
       margin-bottom: 10px;
       min-width: 800px;
@@ -3551,7 +3556,7 @@ html {
       font-size: 14px;
       line-height: 18px;
       color: #333; }
-    .main-content .posts-loop-container .bottom-cta {
+    .main-content .posts-container .bottom-cta {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -3571,7 +3576,7 @@ html {
               align-items: center;
       min-width: 810px;
       margin-top: 20px; }
-      .main-content .posts-loop-container .bottom-cta .continue-button {
+      .main-content .posts-container .bottom-cta .continue-button {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -3585,18 +3590,18 @@ html {
             -ms-flex-align: center;
                 align-items: center;
         text-align: center; }
-        .main-content .posts-loop-container .bottom-cta .continue-button a:hover {
+        .main-content .posts-container .bottom-cta .continue-button a:hover {
           background-color: #e03821;
           -webkit-transition: 0.5s;
           -o-transition: 0.5s;
           transition: 0.5s; }
-        .main-content .posts-loop-container .bottom-cta .continue-button a {
+        .main-content .posts-container .bottom-cta .continue-button a {
           text-decoration: none;
           font-family: 'Raleway';
           background-color: #222222;
           padding: 15px 20px;
           color: white; }
-      .main-content .posts-loop-container .bottom-cta .social-icons ul {
+      .main-content .posts-container .bottom-cta .social-icons ul {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -3606,14 +3611,14 @@ html {
         -webkit-flex-direction: row;
             -ms-flex-direction: row;
                 flex-direction: row; }
-        .main-content .posts-loop-container .bottom-cta .social-icons ul li {
+        .main-content .posts-container .bottom-cta .social-icons ul li {
           margin-right: 0px;
           list-style-type: none; }
-          .main-content .posts-loop-container .bottom-cta .social-icons ul li a {
+          .main-content .posts-container .bottom-cta .social-icons ul li a {
             font-size: 20px;
             color: grey;
             padding: 10px; }
-          .main-content .posts-loop-container .bottom-cta .social-icons ul li a:hover {
+          .main-content .posts-container .bottom-cta .social-icons ul li a:hover {
             color: #e03821;
             -webkit-transition: all 0.5s;
             -o-transition: all 0.5s;
@@ -3625,10 +3630,12 @@ html {
       border: 1px solid #eee;
       margin-left: -2px;
       margin-right: -2px;
-      background-color: #ffffff;
+      background-color: #fff;
       text-decoration: none;
       color: #333;
-      display: inline-block; }
+      display: inline-block;
+      -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.11);
+              box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.11); }
     .main-content .pagination a:hover {
       background-color: #e03821;
       color: #333;
@@ -3693,15 +3700,15 @@ html {
     width: 520px; }
     .main-content .pagination {
       margin-top: 50px; }
-    .main-content .posts-loop-container {
+    .main-content .posts-container {
       margin-top: 50px;
       margin-bottom: 0px;
       width: 480px; }
-      .main-content .posts-loop-container .featured-image, .main-content .posts-loop-container .image {
+      .main-content .posts-container .featured-image, .main-content .posts-container .image {
         width: 510px;
         height: 382.50px;
         margin-bottom: 15px; }
-      .main-content .posts-loop-container .post-excerpt {
+      .main-content .posts-container .post-excerpt {
         padding-bottom: 50px;
         margin-bottom: 10px;
         min-width: 479px;
@@ -3709,7 +3716,7 @@ html {
         text-align: center;
         font-family: 'Cabin';
         font-size: 13px; }
-      .main-content .posts-loop-container .bottom-cta {
+      .main-content .posts-container .bottom-cta {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -3736,21 +3743,21 @@ html {
     width: 400px; }
     .main-content .pagination {
       margin-top: 50px; }
-    .main-content .posts-loop-container {
+    .main-content .posts-container {
       margin-top: 50px;
       margin-bottom: 0px;
       width: 360px; }
-      .main-content .posts-loop-container .post-categories a {
+      .main-content .posts-container .post-categories a {
         font-size: 14px; }
-      .main-content .posts-loop-container .post-title {
+      .main-content .posts-container .post-title {
         text-align: center; }
-        .main-content .posts-loop-container .post-title a {
+        .main-content .posts-container .post-title a {
           font-size: 30px; }
-      .main-content .posts-loop-container .featured-image, .main-content .posts-loop-container .image {
+      .main-content .posts-container .featured-image, .main-content .posts-container .image {
         width: 390px;
         height: 292.50px;
         margin-bottom: 15px; }
-      .main-content .posts-loop-container .post-excerpt {
+      .main-content .posts-container .post-excerpt {
         padding-bottom: 50px;
         margin-bottom: 10px;
         min-width: 359px;
@@ -3758,7 +3765,7 @@ html {
         text-align: center;
         font-family: 'Cabin';
         font-size: 13px; }
-      .main-content .posts-loop-container .bottom-cta {
+      .main-content .posts-container .bottom-cta {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -3778,7 +3785,7 @@ html {
                 align-items: center;
         min-width: 370px;
         margin-top: 20px; }
-        .main-content .posts-loop-container .bottom-cta .continue-button {
+        .main-content .posts-container .bottom-cta .continue-button {
           margin-bottom: 30px; } }
 
 @media (min-width: 50px) and (max-width: 500px) {
@@ -3787,21 +3794,21 @@ html {
     width: 310px; }
     .main-content .pagination {
       margin-top: 50px; }
-    .main-content .posts-loop-container {
+    .main-content .posts-container {
       margin-top: 50px;
       margin-bottom: 0px;
       width: 270px; }
-      .main-content .posts-loop-container .post-categories a {
+      .main-content .posts-container .post-categories a {
         font-size: 14px; }
-      .main-content .posts-loop-container .post-title {
+      .main-content .posts-container .post-title {
         text-align: center; }
-        .main-content .posts-loop-container .post-title a {
+        .main-content .posts-container .post-title a {
           font-size: 30px; }
-      .main-content .posts-loop-container .featured-image, .main-content .posts-loop-container .image {
+      .main-content .posts-container .featured-image, .main-content .posts-container .image {
         width: 300px;
         height: 225px;
         margin-bottom: 15px; }
-      .main-content .posts-loop-container .post-excerpt {
+      .main-content .posts-container .post-excerpt {
         padding-bottom: 50px;
         margin-bottom: 10px;
         min-width: 299px;
@@ -3809,7 +3816,7 @@ html {
         text-align: center;
         font-family: 'Cabin';
         font-size: 13px; }
-      .main-content .posts-loop-container .bottom-cta {
+      .main-content .posts-container .bottom-cta {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -3829,5 +3836,5 @@ html {
                 align-items: center;
         min-width: 370px;
         margin-top: 20px; }
-        .main-content .posts-loop-container .bottom-cta .continue-button {
+        .main-content .posts-container .bottom-cta .continue-button {
           margin-bottom: 30px; } }
