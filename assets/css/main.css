@@ -3615,9 +3615,26 @@ html {
             padding: 10px; }
           .main-content .posts-loop-container .bottom-cta .social-icons ul li a:hover {
             color: #e03821;
-            -webkit-transition: 0.5s;
-            -o-transition: 0.5s;
-            transition: 0.5s; }
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
+  .main-content .pagination {
+    text-align: center; }
+    .main-content .pagination a, .main-content .pagination span {
+      padding: 7px 18px;
+      border: 1px solid #eee;
+      margin-left: -2px;
+      margin-right: -2px;
+      background-color: #ffffff;
+      text-decoration: none;
+      color: #333;
+      display: inline-block; }
+    .main-content .pagination a:hover {
+      background-color: #e03821;
+      color: #333;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
 
 .image {
   margin-top: 20px;
@@ -3674,6 +3691,8 @@ html {
   .main-content {
     margin-left: 30px;
     width: 520px; }
+    .main-content .pagination {
+      margin-top: 50px; }
     .main-content .posts-loop-container {
       margin-top: 50px;
       margin-bottom: 0px;
@@ -3715,6 +3734,8 @@ html {
   .main-content {
     margin: 0 auto;
     width: 400px; }
+    .main-content .pagination {
+      margin-top: 50px; }
     .main-content .posts-loop-container {
       margin-top: 50px;
       margin-bottom: 0px;
@@ -3764,6 +3785,8 @@ html {
   .main-content {
     margin: 0 auto;
     width: 310px; }
+    .main-content .pagination {
+      margin-top: 50px; }
     .main-content .posts-loop-container {
       margin-top: 50px;
       margin-bottom: 0px;
