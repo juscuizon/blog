@@ -56,6 +56,7 @@
 				text-decoration: none
 
 		.featured-image
+			display: flex
 			width: 835px
 			height: 626.25px
 			margin-bottom: 15px
@@ -136,10 +137,24 @@
 			
 
 //==================Posts Design=====================
+.image.preload
+	display: none
+
 .image
 	margin-top: 20px
 	width: 835px
 	height: 626.25px
+	display: flex
+
+.small-image.preload
+	margin-top: 20px
+	width: 835px
+	height: 626.25px
+	display: flex
+	image-rendering: pixelated
+
+.small-image
+	display: none
 
 .post-content
 	font-family: 'Cabin'
@@ -147,6 +162,8 @@
 	text-align: center
 	line-height: 20px
 	color: #333
+
+
 
 
 

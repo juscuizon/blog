@@ -3352,6 +3352,10 @@ html {
     min-width: 320px;
     min-height: 450px;
     margin-bottom: 20px; }
+    .side-bar-container .about-me .about-excerpt {
+      font-family: 'Cabin';
+      font-size: 14px;
+      color: #333333; }
   .side-bar-container .network {
     background-color: white;
     width: 320px;
@@ -3546,6 +3550,10 @@ html {
         margin-right: 2px;
         text-decoration: none; }
     .main-content .posts-container .featured-image {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
       width: 835px;
       height: 626.25px;
       margin-bottom: 15px; }
@@ -3646,10 +3654,34 @@ html {
       -o-transition: all 0.5s;
       transition: all 0.5s; }
 
+.image.preload {
+  display: none; }
+
 .image {
   margin-top: 20px;
   width: 835px;
-  height: 626.25px; }
+  height: 626.25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.small-image.preload {
+  margin-top: 20px;
+  width: 835px;
+  height: 626.25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated; }
+
+.small-image {
+  display: none; }
 
 .post-content {
   font-family: 'Cabin';
@@ -3911,12 +3943,14 @@ html {
       width: 500px;
       height: 30px;
       font-family: 'Cabin';
-      font-size: 14px; }
+      font-size: 14px;
+      border: solid #dedede 0.5px; }
     .contact-content .contact-form textarea {
       width: 500px;
       height: 200px;
       font-family: 'Cabin';
-      font-size: 14px; }
+      font-size: 14px;
+      border: solid #dedede 0.5px; }
     .contact-content .contact-form .button {
       text-transform: uppercase;
       margin: 0 auto;
