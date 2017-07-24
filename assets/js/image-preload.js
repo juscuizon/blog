@@ -15,35 +15,21 @@ function removeClass(ele, cls) {
 }
 
 //onload function
-window.onload = function onload() 
+function blogImages() 
 {
-	var load = document.getElementsByClassName('image')[0];
-    if (!hasClass(load, "preload")) 
+    var load = document.getElementsByClassName('featured-image');
+    for (var i = 0; i < load.length; i++)
     {
-     addClass(load, "preload");
-    } 
-    else 
-    {
-        removeClass(load, "preload");
+        if (!hasClass(load[i], "preload")) { addClass(load[i], "preload"); } 
+        else { removeClass(load[i], "preload"); }
     }
 
-    var load1 = document.getElementsByClassName('small-image')[0];
-    if (!hasClass(load1, "preload")) 
+    var load1 = document.getElementsByClassName('featured-image-small');
+    for (var i = 0; i < load1.length; i++)
     {
-        addClass(load1, "preload");
-    } 
-    else 
-    {
-        removeClass(load1, "preload");
+        if (!hasClass(load1[i], "preload")) { addClass(load1[i], "preload"); } 
+        else { removeClass(load1[i], "preload"); }
     }
 }
 
-
-
-setTimeout(function() {
-	document.getElementsByClassName('image')[0];
-}, 1000)
-
-setTimeout(function() {
-	document.getElementsByClassName('featured-image')[0];
-}, 1000)
+window.onload = blogImages;

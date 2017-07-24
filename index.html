@@ -29,11 +29,13 @@ layout: default
 			{% if image contains 'src' %}
 			{% if foundImage == 0 %}
 			{% assign html = image | split:"/>" | first %}
-			<img class="featured-image" {{ html }} />
+			<img class="featured-image preload" {{ html }} />
 			{% assign foundImage = 1 %}
 			{% endif %}
 			{% endif %}
 			{% endfor %}
+
+			<img class="featured-image-small preload"  src="{{site.baseurl}}/assets/img/small-avatar.jpg" />
 			
 			<div class="post-excerpt">
 				<span>{{ post.excerpt }}</span>
@@ -55,31 +57,31 @@ layout: default
 
 		</div>
 	{% endfor %}
+</ul>
 
-	<!-- pagination -->
-	{% if paginator.total_pages > 1 %}
+<!-- pagination -->
+{% if paginator.total_pages > 1 %}
 	<div class="pagination"> 
 		{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
 		{% else %}
-		<span>&laquo; Prev</span>
+			<span>&laquo; Prev</span>
 		{% endif %}
 
 		{% for page in (1..paginator.total_pages) %}
 		{% if page == paginator.page %}
-		<span class="wfjc">{{ page }}</span>
+			<span class="wfjc">{{ page }}</span>
 		{% elsif page == 1 %}
-		<a href="/">{{ page }}</a>
+			<a href="/">{{ page }}</a>
 		{% else %}
-		<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+			<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
 		{% endif %}
 		{% endfor %}
 
 		{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
 		{% else %}
-		<span>Next &raquo;</span>
+			<span>Next &raquo;</span>
 		{% endif %}
 	</div>
-	{% endif %}
-</ul>
+{% endif %}
