@@ -24,8 +24,6 @@ exclude:
 - gulpfile.js
 - package.json
 
-url: http://www.justincuizon.com
-
 plugins: [jekyll-paginate]
 
 paginate: 5
