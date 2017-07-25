@@ -3174,6 +3174,14 @@ html {
       width: 150px;
       height: 112.5px;
       margin-bottom: -15px; }
+    .footer-bar .recent-post-container .featured-image.preload {
+      display: none; }
+    .footer-bar .recent-post-container .featured-image-small {
+      display: none; }
+    .footer-bar .recent-post-container .featured-image-small.preload {
+      width: 150px;
+      height: 112.5px;
+      margin-bottom: -15px; }
     .footer-bar .recent-post-container .post-title, .footer-bar .recent-post-container .post-details {
       text-transform: uppercase; }
       .footer-bar .recent-post-container .post-title a, .footer-bar .recent-post-container .post-title p, .footer-bar .recent-post-container .post-details a, .footer-bar .recent-post-container .post-details p {
