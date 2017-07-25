@@ -1,10 +1,7 @@
 ---
 title: Justin Cuizon
-
 timezone: UTC
-
 permalink: /:categories/:title/
-
 collections:
   posts:
     title: Posts
@@ -12,22 +9,15 @@ collections:
   uploads:
     title: Uploads
     output: true
-
 name: Justin Cuizon
-
 markdown: kramdown
-
 highlighter: rouge
-
 exclude:
 - node_modules
 - gulpfile.js
 - package.json
-
 baseurl: ''
-
 plugins: [jekyll-paginate]
-
 paginate: 5
 paginate_path: /page:num/
 
