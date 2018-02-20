@@ -3345,9 +3345,6 @@ html {
     margin: 0 auto;
     width: 300px;
     border-bottom: solid #dedede 0.3px; }
-  .side-bar-container .about-image {
-    margin-top: 50px;
-    margin-bottom: 10px; }
   .side-bar-container .title-insta {
     font-family: 'Raleway';
     font-size: 12px;
@@ -3362,7 +3359,28 @@ html {
     background-color: white;
     min-width: 320px;
     min-height: 450px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .side-bar-container .about-me .about-image {
+      margin-bottom: 10px;
+      background-image: url("../img/profile-pic.png");
+      width: 250px;
+      height: 250px; }
     .side-bar-container .about-me .about-excerpt {
       font-family: 'Cabin';
       font-size: 14px;
