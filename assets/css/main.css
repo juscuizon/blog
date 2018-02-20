@@ -3345,6 +3345,9 @@ html {
     margin: 0 auto;
     width: 300px;
     border-bottom: solid #dedede 0.3px; }
+  .side-bar-container .about-image {
+    margin-top: 50px;
+    margin-bottom: 10px; }
   .side-bar-container .title-insta {
     font-family: 'Raleway';
     font-size: 12px;
